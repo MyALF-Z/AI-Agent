@@ -112,7 +112,7 @@ export default function Chat() {
 
           const payload = line.slice(5).trim();
           if (payload === "[DONE]") {
-            // ✅ 流结束：保存最终内容到历史
+            // 流结束：保存最终内容到历史
             const assistantMsg: Message = {
               id: genId(),
               role: "assistant",
@@ -144,11 +144,11 @@ export default function Chat() {
         // 用户主动停止，不添加错误消息
         setCurrentContent("");
       } else {
-        // ✅ 网络/BFF 错误：添加错误提示到历史
+        // 网络/BFF 错误：添加错误提示到历史
         const errorMsg: Message = {
           id: genId(),
           role: "assistant",
-          content: "❌ 请求失败，请检查网络或稍后重试。",
+          content: " 请求失败，请检查网络或稍后重试。",
           ts: Date.now(),
         };
         addMessage(errorMsg);
