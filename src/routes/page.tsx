@@ -105,7 +105,7 @@ import Chat from "../components/Chat";
 export default function Page() {
   return (
     <main>
-      <h1 style={{ textAlign: "center" }}>APP3 — Doubao Streaming Chat</h1>
+      <h1 style={{ textAlign: "center" }}>AI Agent</h1>
       <Chat />
     </main>
   );
