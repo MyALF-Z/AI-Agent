@@ -162,7 +162,6 @@ export default function Chat() {
 
   return (
     <div style={{ padding: 20, fontFamily: "system-ui, sans-serif", maxWidth: 800, margin: "0 auto" }}>
-      <h2>AI 聊天助手</h2>
       <div
         style={{
           border: "1px solid #ddd",
